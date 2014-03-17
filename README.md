@@ -10,8 +10,9 @@ Django Application to test out google's Tesseract. This application uses pyocr a
 2. pip install -r requirments.txt
 3. python manage.py collectstatic
 
-4. install <a href='http://www.leptonica.com/'>leptonica</a>, <a href='https://code.google.com/p/tesseract-ocr/'>tesseract</a> - 
-   https://gist.github.com/roger-link/2a8f5df81f2a7ceabe45
+4. install <a href='http://www.leptonica.com/'>leptonica</a> (Ubuntu instructions <a href='https://gist.github.com/roger-link/2a8f5df81f2a7ceabe45'>here</a>)
+5. install <a href='https://code.google.com/p/tesseract-ocr/'>tesseract</a>(Ubuntu instructions <a href='https://gist.github.com/roger-link/2a8f5df81f2a7ceabe45'>here</a>)
+   
 
 
 5. python manage.py celery worker
