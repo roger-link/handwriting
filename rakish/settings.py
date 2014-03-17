@@ -84,7 +84,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/Users/rl011787/.git/handwriting/rakish/static'
+STATIC_ROOT = PROJECT_PATH + '/static/'
 
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 
