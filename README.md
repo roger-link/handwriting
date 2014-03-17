@@ -10,7 +10,7 @@ installation
 2. pip install -r requirments.txt
 3. python manage.py collectstatic
 
-4. install tesseract - https://code.google.com/p/tesseract-ocr/
+4. install <a href='https://code.google.com/p/tesseract-ocr/'>tesseract</a> - 
    https://gist.github.com/roger-link/2a8f5df81f2a7ceabe45
 
 
