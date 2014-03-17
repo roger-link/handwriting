@@ -6,13 +6,13 @@ Django Application to test out google's Tesseract. This application uses pyocr a
 
 installation
 
-clone the repo
-pip install -r requirments.txt
-python manage.py collectstatic
+1. clone the repo
+2. pip install -r requirments.txt
+3. python manage.py collectstatic
 
-install tesseract - https://code.google.com/p/tesseract-ocr/
-(ensure you can call "tesseract" from the command prompt)
+4. install tesseract - https://code.google.com/p/tesseract-ocr/
+   https://gist.github.com/roger-link/2a8f5df81f2a7ceabe45
 
 
-python manage.py celery worker
-python manage.py runserver
+5. python manage.py celery worker
+6. python manage.py runserver
