@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<head>
+    <title>Handwriting</title>
+</head>
+<body>
+{{ form }}
+<div><img id='image'></img></div>
+<div id='status'></div>
+{{data}}
+</body>
+
+<script>
+
+$.ajaxSetup({beforeSend: function(xhr, settings){
+    xhr.setRequestHeader('X-CSRFToken', 
+                         '{{ csrf_token }}');
+}});
+
+$("#id_images").change(function() {
+    var image_choice = $("#id_images").val();
+    var filename = "{{ STATIC_URL }}/images/" + $("#id_images option:selected").text();
+
+    $.ajax({
+                type:"POST",
+                url:"/handwriting/",
+                data: {'images' : image_choice},
+                success: function(data) {
+
+                    $("#image").attr('src', filename); //update image
+                    $('#status').html("<span>" + data + "</span>"); //update text
+                    
+                },
+                error: function(data) { 
+                    $('#status').html('<span>FAILED...</span>');
+                }
+            });
+ });
+</script>
+</html>
+
+
