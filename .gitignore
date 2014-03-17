@@ -37,3 +37,8 @@ nosetests.xml
 
 # Directories
 static/
+
+# DB
+*.sqlite3
+
+.DS_Store
