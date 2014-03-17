@@ -8,6 +8,7 @@ installation
 
 clone the repo
 pip install -r requirments.txt
+python manage.py collectstatic
 
 install tesseract - https://code.google.com/p/tesseract-ocr/
 (ensure you can call "tesseract" from the command prompt)
