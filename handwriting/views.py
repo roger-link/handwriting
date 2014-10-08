@@ -16,11 +16,9 @@ class HandwritingView(FormView):
     form_class = ImageForm
     success_url = '/handwriting/'
 
-
-
     def get_form(self, form_class):
-        form = super(HandwritingView, self).get_form(form_class)
-        form.fields['images'].choices = choices
+        # form = super(HandwritingView, self).get_form(form_class)
+        # form.fields['images'].choices = choices
         return form
 
     def post(self, request, *args, **kwargs):
