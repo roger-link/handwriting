@@ -14,4 +14,6 @@ def get_text_from_image(image):
                                 lang=LANGUAGE,
                                 builder=pyocr.builders.TextBuilder())
 
+
+
     return text
